@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>SUMA DE PARES Y IMPARES DE ARRAYS</title>
+</head>
+<body class="container w-4/5 mx-auto bg-linear-to-r from-cyan-200  to-cyan-200  " >
+
+
+          <header class="bg-[url(imagenes/retulo.png)] bg-[length:100%_100%] bg-center bg-no-repeat mb-8 border-dashed border-[3px] border-cyan-900 rounded-3xl mt-1 overflow-hidden flex items-center justify-center 
+    
+    min-h-[80px] py-4 px-4 sm:border-8 sm:pr-16 md:py-9 lg:w-full md:justify-start md:pl-20 md:border-[15px] lg:min-h-[150px] 
+
+    lg:rounded-[60px] lg:min-h-[200px] lg:py-24 lg:w-[98%] lg:max-w-[1800px] xl:pl-32 2xl:pl-40 mx-auto "
+      >
+
+        
+        <h1 class="text-center text-cyan-900 font-black break-words [-webkit-text-stroke:2px_white] text-lg xs:text-xl sm:text-3xl md:text-left md:text-4xl md:pl-6 lg:text-5xl lg:pl-12 xl:text-7xl xl:pl-20 2xl:text-6xl 2xl:pl-32"
+        
+        >SUMA DE ARRAYS</h1>
+
+
+
+    </header>
+
+     <main class=""  >
+
+        <details class="mb-10  bg-linear-to-r from-cyan-300 to-teal-100 mt-24  rounded-3xl sm:mb-14 md:mb-16 lg:mb-20 xl:mb-24 2xl:mb-28 mx-2 sm:mx-0 sm:ml-5 md:ml-12 lg:ml-20 xl:ml-28 2xl:ml-36">
+
+            <summary class=" bg-linear-to-r from-cyan-400  to-cyan-300  text-cyan-700 font-black rounded-2xl pt-1 pb-2 text-[10px] sm:text-sm md:text-base lg:text-lg lg:pt-3 lg:pb-3 xl:text-xl xl:pt-4 xl:pb-4 2xl:text-2xl 2xl:pt-5 2xl:pb-5  ">Ejercicio 7.9. Suma todos los pares y los impares de un array </summary>
+
+            <div class="ml-1 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10 2xl:ml-12 mt-4 text-xs sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
+
+                <p>Dado un array de números, el programa debe mostrar la suma de todos los números pares y la suma de todos los números impares.</p>text-center text-cyan-900 font-black break-words drop-shadow-[0_0_8px_rgba(34,197,94,0.8)] text-lg xs:text-xl sm:text-3xl md:text-left md:text-4xl md:pl-6 lg:text-5xl lg:pl-12 xl:text-7xl xl:pl-20 2xl:text-8xl 2xl:pl-32
+                 <p>Puedes pedir al usuario que escriba los números separados por comas en un control <code>&lt;input type="text"...</code>.</p>
+               <p>Y lo puedes convertir a <code>array</code> con el método <code>split</code>. He aquí un ejemplo con frases:</p>
+               <blockquote>
+                <code class="whitespace-pre-wrap block" >
+                 let frase = "Hola mundo ejemplo";<br>
+                const arrayPalabras = frase.split(' ');
+               </code>
+              </blockquote>
+    <p class="mt-4 text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">Referencia: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/split">mdn</a></p>
+           
+            </div>
+              
+          </details> 
+
+            <div class="flex flex-col gap-4 mx-4 ml-6 pt-14 sm:flex-row sm:items-center sm:gap-2 sm:ml-4 md:gap-4 md:ml-10 lg:ml-9xl:ml-52 2xl:ml-24">
+
+              <label class="text-sm   text-cyan-700 font-black    sm:text-base lg:text-lg xl:text-xl min-w-max" >Introduce numeros separados por comas: </label>
+
+              <input class="border border-cyan-600 border-solid rounded-3xl px-2 py-1 text-sm   text-cyan-700 font-black  sm:text-[10px] sm:px-0.5 sm:w-16 md:text-base md:w-40 lg:text-lg lg:w-60 xl:text-xl xl:w-[400px] 2xl:w-[500px] lg:px-3 lg:py-1.5 xl:px-4 xl:py-2 w-full "  type="text" id="texto">
+
+           
+                <button class="border-2 border-cyan-600 border-solid  rounded-3xl px-2 py-1 text-sm font-bold bg-cyan-600  text-white cursor-pointer hover:bg-linear-to-r hover:from-green-300 hover:to-teal-500-200 hover:text-green-800 sm:text-[11px] sm:px-1.5 sm:py-1 md:text-sm md:px-2.5 md:py-1 lg:text-base lg:px-3 lg:py-1  xl:text-xl w-full sm:w-auto xl:px-5 xl:py-2 min-w-max "type="button" onclick="mostrar_suma_arrays()">MOSTRAR SUMA</button>
+
+              
+             </div>
+
+             <div class="ml-1 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10 2xl:ml-12 mt-4 text-xs sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
+                <p id="resultado" class="text-sm   text-cyan-700 font-black   sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-xl 2xl:ml-36 mt-2 sm:mt-0 md:mt-0 break-words w-full "></p>
+
+
+             </div>
+
+
+   <script src="js/arrays.js"></script> 
+    
+</body>
+</html>
